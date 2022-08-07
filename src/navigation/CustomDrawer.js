@@ -8,6 +8,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import { SafeAreaView, View } from "react-native";
 import CustomDrawerContent from "../components/CustomDrawerContent";
 import MainLayout from "../screens/MainLayout";
+import TabNavigation from "./TabNavigation";
 
 const Drawer = createDrawerNavigator();
 const CustomDrawer = () => {
@@ -41,7 +42,7 @@ const CustomDrawer = () => {
 		>
 			<Drawer.Screen
 				name="MainLayout"
-				component={MainLayout}
+				component={TabNavigation}
 				options={{
 					drawerIcon: () => (
 						<Ionicons name="home-outline" size={20} color="white" />

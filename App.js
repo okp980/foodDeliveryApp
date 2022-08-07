@@ -1,6 +1,4 @@
 import "react-native-gesture-handler";
-import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
 import { TailwindProvider } from "tailwindcss-react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -13,7 +11,7 @@ export default function App() {
 		<TailwindProvider>
 			<NavigationContainer>
 				<Stack.Navigator screenOptions={{ headerShown: false }}>
-					<Stack.Screen name="Home" component={CustomDrawer} />
+					<Stack.Screen name="Main" component={CustomDrawer} />
 				</Stack.Navigator>
 			</NavigationContainer>
 		</TailwindProvider>
