@@ -1,33 +1,159 @@
+import {
+	Entypo,
+	Feather,
+	Ionicons,
+	MaterialCommunityIcons,
+} from "@expo/vector-icons";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import { View } from "react-native";
+import { SafeAreaView, View } from "react-native";
 import CustomDrawerContent from "../components/CustomDrawerContent";
 import MainLayout from "../screens/MainLayout";
 
 const Drawer = createDrawerNavigator();
 const CustomDrawer = () => {
 	return (
-		<View className="bg-purple-600 flex-1">
-			<Drawer.Navigator
-				screenOptions={{
-					drawerType: "slide",
-					overlayColor: "transparent",
-					drawerStyle: {
-						flex: 1,
-						width: "65%",
-						paddingRight: 20,
-						backgroundColor: "transparent",
+		// <SafeAreaView className="bg-purple-600 bg-pu flex-1">
+		<Drawer.Navigator
+			screenOptions={{
+				drawerType: "slide",
+				overlayColor: "transparent",
+				drawerStyle: {
+					flex: 1,
+					width: "65%",
+					paddingRight: 20,
+					backgroundColor: "#9333ea",
+					color: "white",
+				},
+				sceneContainerStyle: {
+					backgroundColor: "#9333ea",
+				},
+				headerShown: false,
+				drawerActiveBackgroundColor: "#4d1679",
+				drawerInactiveBackgroundColor: "transparent",
+				drawerItemStyle: {
+					color: "white",
+				},
+			}}
+			initialRouteName="MainLayout"
+			drawerContent={(props) => {
+				return <CustomDrawerContent {...props} />;
+			}}
+		>
+			<Drawer.Screen
+				name="MainLayout"
+				component={MainLayout}
+				options={{
+					drawerIcon: () => (
+						<Ionicons name="home-outline" size={20} color="white" />
+					),
+					drawerLabelStyle: {
+						marginLeft: -15,
+						color: "white",
 					},
-					sceneContainerStyle: "transparent",
-					headerShown: false,
 				}}
-				initialRouteName="MainLayout"
-				drawerContent={(props) => {
-					return <CustomDrawerContent {...props} />;
+			/>
+			<Drawer.Screen
+				name="Wallet"
+				component={MainLayout}
+				options={{
+					drawerIcon: () => (
+						<Ionicons name="wallet-outline" size={20} color="white" />
+					),
+					drawerLabelStyle: {
+						marginLeft: -15,
+						color: "white",
+					},
 				}}
-			>
-				<Drawer.Screen name="MainLayout" component={MainLayout} />
-			</Drawer.Navigator>
-		</View>
+			/>
+			<Drawer.Screen
+				name="Notifications"
+				component={MainLayout}
+				options={{
+					drawerIcon: () => (
+						<Ionicons name="notifications" size={20} color="white" />
+					),
+					drawerLabelStyle: {
+						marginLeft: -15,
+						color: "white",
+					},
+				}}
+			/>
+			<Drawer.Screen
+				name="Favourites"
+				component={MainLayout}
+				options={{
+					drawerIcon: () => (
+						<Ionicons name="heart-outline" size={20} color="white" />
+					),
+					drawerLabelStyle: {
+						marginLeft: -15,
+						color: "white",
+					},
+				}}
+			/>
+			<Drawer.Screen
+				name="Track Your Order"
+				component={MainLayout}
+				options={{
+					drawerIcon: () => <Entypo name="location" size={20} color="white" />,
+					drawerLabelStyle: {
+						marginLeft: -15,
+						color: "white",
+					},
+				}}
+			/>
+			<Drawer.Screen
+				name="Coupons"
+				component={MainLayout}
+				options={{
+					drawerIcon: () => (
+						<MaterialCommunityIcons name="cards" size={20} color="white" />
+					),
+					drawerLabelStyle: {
+						marginLeft: -15,
+						color: "white",
+					},
+				}}
+			/>
+			<Drawer.Screen
+				name="Settings"
+				component={MainLayout}
+				options={{
+					drawerIcon: () => <Entypo name="cog" size={20} color="white" />,
+					drawerLabelStyle: {
+						marginLeft: -15,
+						color: "white",
+					},
+				}}
+			/>
+			<Drawer.Screen
+				name="Invite a Friend"
+				component={MainLayout}
+				options={{
+					drawerIcon: () => (
+						<Ionicons name="person-add-outline" size={20} color="white" />
+					),
+					drawerLabelStyle: {
+						marginLeft: -15,
+						color: "white",
+					},
+				}}
+			/>
+			<Drawer.Screen
+				name="Help Center"
+				component={MainLayout}
+				options={{
+					drawerIcon: () => (
+						<Feather name="help-circle" size={20} color="white" />
+					),
+					drawerLabelStyle: {
+						marginLeft: -15,
+						color: "white",
+					},
+				}}
+			/>
+		</Drawer.Navigator>
+		// </SafeAreaView>
 	);
 };
 export default CustomDrawer;

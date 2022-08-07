@@ -23,7 +23,7 @@ const MainLayout = () => {
 
 	return (
 		<Animated.View
-			className="flex-1 items-center justify-center bg-green-400"
+			className="flex-1 items-center justify-center bg-white"
 			style={[animatedStyle]}
 		>
 			<Text>MainLayout</Text>
