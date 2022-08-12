@@ -1,0 +1,23 @@
+[
+	{
+		"image": "https://res.cloudinary.com/dvz418h2k/image/upload/v1659993003/samples/food/product-details-4_pue4kt.jpg",
+		"name": "tomatoe",
+		"title": "Red Fresh tomatoe",
+		"price": 15.99,
+		"description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quam accusamus quas quasi natus earum suscipit ullam debitis unde aliquam commodi, beatae est! Alias amet voluptatibus omnis expedita!"
+	},
+	{
+		"image": "https://res.cloudinary.com/dvz418h2k/image/upload/v1659993003/samples/food/product-details-2_pplqgb.jpg",
+		"name": "pepper",
+		"title": "Green Fresh Pepper",
+		"price": 15.99,
+		"description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quam accusamus quas quasi natus earum suscipit ullam debitis unde aliquam commodi, beatae est! Alias amet voluptatibus omnis expedita!"
+	},
+	{
+		"image": "https://res.cloudinary.com/dvz418h2k/image/upload/v1659992860/samples/food/product-5_bjkldo.jpg",
+		"name": "burger",
+		"title": "Rich Fresh Pepper",
+		"price": 15.99,
+		"description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quam accusamus quas quasi natus earum suscipit ullam debitis unde aliquam commodi, beatae est! Alias amet voluptatibus omnis expedita!"
+	}
+]
