@@ -59,14 +59,14 @@ const FilterModal = ({ visible, onClose }) => {
                 backgroundColor: 'white'
             }}>
                 <View className='flex-row items-center justify-between'>
-                    <Text className='text-gray-600 font-bold text-lg'>Filter Your Search</Text>
+                    <Text className='text-gray-600 font-poppinsBold text-xl'>Filter Your Search</Text>
                     <TouchableOpacity onPress={onClose}>
                         <Ionicons name='close-circle-outline' size={40} color="purple" />
                     </TouchableOpacity>
                 </View>
                 <ScrollView>
                     {/* Distance */}
-                    <Text className='text-gray-600 font-normal text-lg mt-3'>Distance</Text>
+                    <Text className='text-gray-600 font-poppinsRegular text-lg mt-3'>Distance</Text>
                     <TwoPointSlider
                         max={20}
                         min={1}
@@ -75,18 +75,18 @@ const FilterModal = ({ visible, onClose }) => {
                         values={[3, 10]}
                     />
                     {/* Delivery Time */}
-                    <Text className='text-gray-600 font-normal text-lg mt-5'>Delivery Time</Text>
+                    <Text className='text-gray-600 font-poppinsRegular text-lg mt-5'>Delivery Time</Text>
                     <View className='flex-row space-x-4 py-2'>
                         {
                             deliveryTime.map((delTime, index) => (
                                 <TouchableOpacity onPress={() => setTime(delTime)} key={index} className={`px-6 py-3 ${delTime === time ? 'bg-purple-600' : 'bg-purple-100'} rounded-sm`}>
-                                    <Text className={`${delTime === time ? 'text-white' : 'text-purple-600'}`}>{delTime} Mins</Text>
+                                    <Text className={`${delTime === time ? 'text-white' : 'text-purple-600'} font-poppinsRegular`}>{delTime} Mins</Text>
                                 </TouchableOpacity>
                             ))
                         }
                     </View>
                     {/* Price Range */}
-                    <Text className='text-gray-600 font-normal text-lg mt-3'>Price Range</Text>
+                    <Text className='text-gray-600 font-poppinsRegular text-lg mt-3'>Price Range</Text>
                     <TwoPointSlider
                         max={100}
                         min={0}
@@ -95,15 +95,15 @@ const FilterModal = ({ visible, onClose }) => {
                         values={[10, 50]}
                     />
                     {/* Ratings */}
-                    <Text className='text-gray-600 font-normal text-lg mt-5'>Ratings</Text>
+                    <Text className='text-gray-600 font-poppinsRegular text-lg mt-5'>Ratings</Text>
                     <View className='flex-row space-x-4 py-2'>
                         {
                             ratings.map((rate, index) => (
-                                <TouchableOpacity onPress={() => setRating(rate)} key={index} className={`px-3 py-3 ${rate === rating ? 'bg-purple-600' : 'bg-purple-100'} rounded-sm`}>
-                                    <Text className={`${rate === rating ? 'text-white' : 'text-purple-600'} mr-2`}>{rate}
-                                        {rate === rating ? <Ionicons name='star' size={16} color={GlobalStyle.color.white} />
-                                            : <Ionicons name='star-outline' size={16} color={GlobalStyle.color.primary} />}
-                                    </Text>
+                                <TouchableOpacity onPress={() => setRating(rate)} key={index} className={`px-3 py-3 ${rate === rating ? 'bg-purple-600' : 'bg-purple-100'} rounded-sm flex-row`}>
+                                    <Text className={`${rate === rating ? 'text-white' : 'text-purple-600'} mr-2 font-poppinsRegular`}>{rate}</Text>
+                                    {rate === rating ? <Ionicons name='star' size={16} color={GlobalStyle.color.white} />
+                                        : <Ionicons name='star-outline' size={16} color={GlobalStyle.color.primary} />}
+
                                 </TouchableOpacity>
                             ))
                         }
@@ -112,7 +112,7 @@ const FilterModal = ({ visible, onClose }) => {
                 </ScrollView>
                 <View>
                     <TouchableOpacity className='rounded-md items-center justify-center h-12 bg-purple-600'>
-                        <Text className='text-lg text-purple-50 uppercase'>Apply Filters</Text>
+                        <Text className='text-lg text-purple-50 uppercase  font-poppinsRegular tracking-wider'>Apply Filters</Text>
                     </TouchableOpacity>
                 </View>
             </Animated.View>

@@ -5,10 +5,10 @@ const RecommendedSection = () => {
 
     return (
         <View className='my-3'>
-            <View className='flex-row justify-between mb-2'>
-                <Text className='capitalize font-bold text-md text-gray-600'>Recommended</Text>
+            <View className='flex-row justify-between mb-2 items-center'>
+                <Text className='capitalize font-poppinsBold text-xl text-gray-600'>Recommended</Text>
                 <TouchableOpacity>
-                    <Text className='capitalize font-normal text-md text-purple-600'>
+                    <Text className='capitalize font-poppinsLight text-xs  text-purple-600'>
                         Show all
                     </Text>
                 </TouchableOpacity>
@@ -19,7 +19,7 @@ const RecommendedSection = () => {
                 data={data}
                 renderItem={({ item, }) => (
                     <TouchableOpacity>
-                        <View className='bg-slate-200  mr-4 p-2 py-4 rounded-md w-[350px] flex-row items-center'>
+                        <View className='bg-gray-100  mr-4 p-2 py-4 rounded-md w-[350px] flex-row items-center'>
 
                             <View className='items-center mr-6'>
                                 <Image
@@ -31,10 +31,10 @@ const RecommendedSection = () => {
                                 />
                             </View>
                             <View>
-                                <Text className=' mt-4 text-lg font-bold capitalize'>{item.name}</Text>
+                                <Text className=' mt-4 text-lg font-poppinsBold capitalize'>{item.name}</Text>
 
-                                {item.suggestions.map((itm, index) => (<Text key={index} className=' text-md font-light capitalize text-gray-400'>{itm}</Text>))}
-                                <Text className=' mb-1 text-xls capitalize font-extrabold text-gray-800 mt-3 text-xl'>${item.price}</Text>
+                                {item.suggestions.map((itm, index) => (<Text key={index} className=' text-md font-poppinsLight capitalize text-gray-400'>{itm}</Text>))}
+                                <Text className=' mb-1 text-xls capitalize font-poppinsSemiBold text-gray-800 mt-3 text-xl'>${item.price}</Text>
                             </View>
                         </View>
                     </TouchableOpacity>

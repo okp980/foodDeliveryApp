@@ -24,7 +24,7 @@ const TwoPointSlider = ({ values, min, max, prefix, postfix, onValuesChange }) =
                             justifyContent: 'center'
                         }}>
                             <View style={{ backgroundColor: GlobalStyle.color.primary, height: 20, width: 20, borderRadius: 10, }}></View>
-                            <Text style={{ marginTop: 5, color: GlobalStyle.color.darkGray }}>
+                            <Text style={{ marginTop: 5, color: GlobalStyle.color.darkGray, fontFamily: 'Poppins-Regular' }}>
                                 {prefix}{e.currentValue} {postfix}
                             </Text>
                         </View>

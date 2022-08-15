@@ -7,8 +7,8 @@ const ViewProfile = () => {
                 <Ionicons name="person-circle" size={44} color="white" />
             </View>
             <View>
-                <Text className='text-xl text-slate-300 font-bold'>Okpunor Emmanuel</Text>
-                <Text className='text-xs text-slate-300 font-normal'>View your profile</Text>
+                <Text className='text-base text-purple-50 font-poppinsBold'>Okpunor Emmanuel</Text>
+                <Text className='text-xs text-purple-50 font-poppinsLight'>View your profile</Text>
             </View>
         </TouchableOpacity>
     )

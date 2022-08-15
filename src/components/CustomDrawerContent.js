@@ -8,8 +8,11 @@ import CloseDrawer from "./CloseDrawer";
 import CustomDrawerItem from "./CustomDrawerItem";
 import ViewProfile from "./ViewProfile";
 import { SimpleLineIcons } from "@expo/vector-icons";
+import { useDispatch } from "react-redux";
+import { signOutUser } from "../store/features/user/userSlice";
 
 const CustomDrawerContent = (props) => {
+	const dispatch = useDispatch();
 	return (
 		<DrawerContentScrollView
 			{...props}
@@ -28,11 +31,13 @@ const CustomDrawerContent = (props) => {
 			</View>
 
 			<DrawerItem
+				onPress={() => dispatch(signOutUser())}
 				label="Logout"
 				icon={() => <SimpleLineIcons name="logout" size={20} color="white" />}
 				labelStyle={{
 					marginLeft: -15,
-					fontSize: 14,
+					fontSize: 16,
+					fontFamily: "Poppins-Regular",
 					color: "white",
 				}}
 			/>

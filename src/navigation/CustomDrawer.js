@@ -50,6 +50,7 @@ const CustomDrawer = () => {
 					drawerLabelStyle: {
 						marginLeft: -15,
 						color: "white",
+						fontFamily: "Poppins-Regular",
 					},
 				}}
 			/>
@@ -63,6 +64,7 @@ const CustomDrawer = () => {
 					drawerLabelStyle: {
 						marginLeft: -15,
 						color: "white",
+						fontFamily: "Poppins-Regular",
 					},
 				}}
 			/>
@@ -76,6 +78,7 @@ const CustomDrawer = () => {
 					drawerLabelStyle: {
 						marginLeft: -15,
 						color: "white",
+						fontFamily: "Poppins-Regular",
 					},
 				}}
 			/>
@@ -89,6 +92,7 @@ const CustomDrawer = () => {
 					drawerLabelStyle: {
 						marginLeft: -15,
 						color: "white",
+						fontFamily: "Poppins-Regular",
 					},
 				}}
 			/>
@@ -100,6 +104,7 @@ const CustomDrawer = () => {
 					drawerLabelStyle: {
 						marginLeft: -15,
 						color: "white",
+						fontFamily: "Poppins-Regular",
 					},
 				}}
 			/>
@@ -113,6 +118,7 @@ const CustomDrawer = () => {
 					drawerLabelStyle: {
 						marginLeft: -15,
 						color: "white",
+						fontFamily: "Poppins-Regular",
 					},
 				}}
 			/>
@@ -124,6 +130,7 @@ const CustomDrawer = () => {
 					drawerLabelStyle: {
 						marginLeft: -15,
 						color: "white",
+						fontFamily: "Poppins-Regular",
 					},
 				}}
 			/>
@@ -137,6 +144,7 @@ const CustomDrawer = () => {
 					drawerLabelStyle: {
 						marginLeft: -15,
 						color: "white",
+						fontFamily: "Poppins-Regular",
 					},
 				}}
 			/>
@@ -150,6 +158,7 @@ const CustomDrawer = () => {
 					drawerLabelStyle: {
 						marginLeft: -15,
 						color: "white",
+						fontFamily: "Poppins-Regular",
 					},
 				}}
 			/>
