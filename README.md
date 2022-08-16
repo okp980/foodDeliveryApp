@@ -2,6 +2,8 @@
 
 Currently building a food delivery app. Continue to check back to view progress...
 
+[Download App](https://drive.google.com/file/d/1DZ6jP3th7DH54xCyCYOItCuXYyUU06kV/view?usp=sharing)
+
 ## Tools
 - React Native (Expo)
 - Redux
